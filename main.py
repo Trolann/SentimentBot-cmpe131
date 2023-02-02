@@ -12,12 +12,8 @@ def determine_sentiment(word):
         return "Neutral"
 
 def main(text):
-    is_word = text.strip().lower() in words.words()
-    if not is_word:
-        raise ValueError("Not a valid English word")
-    else:
-        sentiment = determine_sentiment(text)
-        print(f"Sentiment of the word is: {sentiment}")
+    sentiment = determine_sentiment(text)
+    print(f"Sentiment of the word is: {sentiment}")
 
 if __name__ == "__main__":
     nltk.download("vader_lexicon")
