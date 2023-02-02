@@ -529,6 +529,17 @@ dev = ["pytest (>=7.0.1)", "pytest-timeout (>=2.1.0)", "build (>=0.7.0)", "pre-c
 doc = ["pytoolconfig", "sphinx (>=4.5.0)", "sphinx-autodoc-typehints (>=1.18.1)", "sphinx-rtd-theme (>=1.0.0)"]
 
 [[package]]
+name = "textblob"
+version = "0.17.1"
+description = "Simple, Pythonic text processing. Sentiment analysis, part-of-speech tagging, noun phrase parsing, and more."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+nltk = {version = ">=3.1", markers = "python_version >= \"3\""}
+
+[[package]]
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
@@ -635,7 +646,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10.0,<3.11"
-content-hash = "74dee0f8c05a42b2529681fdbdfd815ccdbf9abfaa2ed83b0359bce2d8e51a2d"
+content-hash = "5a6599251affd1bd73271c270dc041947a3a49f44911915059cb46f509eca839"
 
 [metadata.files]
 aiohttp = []
@@ -680,6 +691,7 @@ replit = []
 replit-python-lsp-server = []
 requests = []
 rope = []
+textblob = []
 toml = []
 tomli = []
 tqdm = []
