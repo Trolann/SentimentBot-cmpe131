@@ -1,5 +1,5 @@
 import unittest
-from your_module import determine_sentiment, main
+from main import determine_sentiment, main
 
 class TestSentiment(unittest.TestCase):
     def test_positive_sentiment(self):
